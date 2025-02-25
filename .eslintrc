@@ -1,0 +1,48 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"settings": {
+		"react": {
+			"version": "17.0.0"
+		}
+	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:prettier/recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"plugins": ["prettier", "react", "react-hooks", "@typescript-eslint","simple-import-sort"],
+	"rules": {
+		"prettier/prettier": "error",
+		"no-prototype-builtins": 0,
+		"@typescript-eslint/ban-ts-ignore": 0,
+		"@typescript-eslint/ban-ts-comment": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"@typescript-eslint/no-empty-function": 0,
+		"@typescript-eslint/no-explicit-any": 0,
+		"@typescript-eslint/no-non-null-assertion": 0,
+		"react/react-in-jsx-scope": 0,
+		"prefer-const": 0,
+		"@typescript-eslint/no-empty-interface": 0,
+		"react/prop-types": 0,
+		"react/display-name":0,
+		"@typescript-eslint/no-var-requires": 0,
+		"simple-import-sort/imports": 1,
+    "simple-import-sort/exports": 1
+	}
+}

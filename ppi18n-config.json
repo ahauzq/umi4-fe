@@ -1,0 +1,34 @@
+{
+  "ppDir": "./.ppi18n",
+  "sourceLang": "zh-CN",
+  "languages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "mergeSameSource": true,
+  "extension": ".ts",
+  "baiduTranslateOption": {
+    "baiduApiKey": {
+      "appId": "",
+      "appKey": ""
+    },
+    "QPS": 1,
+    "baiduLangMap": {
+      "zh-CN": "zh",
+      "en-US": "en",
+      "ja-JP": "jp"
+    }
+  },
+  "translateOrigin": "",
+  "translateOptions": {
+    "concurrentLimit": 10,
+    "requestOptions": {}
+  },
+  "defaultTranslateKeyApi": "Pinyin",
+  "importI18N": "import I18N from '@/utils/I18N';",
+  "ignorePaths": [
+    ".umi",
+    "api",
+    "assets"
+  ]
+}

@@ -1,0 +1,135 @@
+body {
+  each(@line-height, {
+      .line-height-@{key} {
+        line-height: var(@value);
+      }
+    }
+
+  )
+    each(@text-size, {
+      .fs-@{value} {
+        font-size: unit(@value, px);
+      }
+    }
+
+  )
+    each(@space-size, {
+      .margin-@{value} {
+        margin: unit(@value, px);
+      }
+
+      .mt-@{value} {
+        margin-top: unit(@value, px);
+      }
+
+      .mb-@{value} {
+        margin-bottom: unit(@value, px);
+      }
+
+      .ml-@{value} {
+        margin-left: unit(@value, px);
+      }
+
+      .mr-@{value} {
+        margin-right: unit(@value, px);
+      }
+
+      .padding-@{value} {
+        padding: unit(@value, px);
+      }
+
+      .pt-@{value} {
+        padding-top: unit(@value, px);
+      }
+
+      .pb-@{value} {
+        padding-bottom: unit(@value, px);
+      }
+
+      .pl-@{value} {
+        padding-left: unit(@value, px);
+      }
+
+      .pr-@{value} {
+        padding-right: unit(@value, px);
+      }
+    }
+
+  ).text-left {
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .vertical-middle {
+    vertical-align: middle;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .line-height {
+    line-height: 1;
+  }
+
+  .radius-half {
+    border-radius: 50%;
+  }
+
+  .border-box {
+    box-sizing: border-box;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .neg-horizontal-line {
+    height: 1px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      height: 1px;
+      background: #EBEBEB;
+      transform: scaleY(0.5);
+      transform-origin: 0 0;
+    }
+  }
+
+  .neg-vertical-line {
+    width: 1px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      width: 1px;
+      background: #EBEBEB;
+      transform: scaleX(0.5);
+      transform-origin: 0 0;
+    }
+  }
+}

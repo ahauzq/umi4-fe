@@ -1,0 +1,12 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"strictPropertyInitialization": false,
+		// "strictFunctionTypes": false,
+		"skipLibCheck": true,
+		"jsx": "react-jsx",
+		"allowJs": true
+	},
+}
