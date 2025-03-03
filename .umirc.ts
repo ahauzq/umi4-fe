@@ -13,12 +13,17 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/css',
     },
     {
       name: '首页',
       path: '/home',
       component: './home',
+    },
+    {
+      name: 'css',
+      path: '/css',
+      component: './css',
     },
   ],
   extraPostCSSPlugins: [
