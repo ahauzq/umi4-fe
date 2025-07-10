@@ -1,0 +1,17 @@
+{
+	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true, //保存格式化
+	"editor.renderWhitespace": "all", //空格变成......
+	"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+	"files.autoSave": "onFocusChange", // 窗口失去焦点自动保存
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

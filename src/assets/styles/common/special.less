@@ -1,0 +1,13 @@
+body {
+  .ellipsis {
+    .ellipsis;
+  }
+
+  each(2 3 4, {
+      .line-ellipsis-@{value} {
+        .line-ellipsis(@value);
+      }
+    }
+
+  )
+}
